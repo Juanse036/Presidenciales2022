@@ -1,0 +1,21 @@
+{
+  "name": "presidenciales2022",
+  "version": "1.0.0",
+  "description": "API Consulta de datos Presidenciales Colombia 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server"
+  },
+  "author": "Juan Se Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "request": "^2.88.2",
+    "xml2js": "^0.4.23",
+    "zlib": "^1.0.5"
+  }
+}
