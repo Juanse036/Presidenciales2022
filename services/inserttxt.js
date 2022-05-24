@@ -235,6 +235,8 @@ async function ReadCandidatosTXT(){
 
 
 
+
+
 async function InsertAll(page = 1){
 
   InsertCandidatos()
@@ -294,7 +296,7 @@ async function InsertAll(page = 1){
     
         let offset = helper.getOffset(page, config.listPerPage);
       
-        let temp = `UPDATE nacional SET Votos='0',Porcentaje='0',Boletin='0' WHERE 1` 
+        let temp = `UPDATE nacional SET Votos='0',Porcentaje='0',Boletin='0', Escrutado='0' WHERE 1` 
         let rows = await db.query(
           temp, 
           [offset, config.listPerPage]
@@ -304,7 +306,7 @@ async function InsertAll(page = 1){
           let tempcapital = capital.replace(/\s/g, '_')
           tempcapital = tempcapital.replace(/\./g,'_')
 
-          temp = `UPDATE capital_${tempcapital} SET Votos='0',Porcentaje='0',Boletin='0' WHERE 1` 
+          temp = `UPDATE capital_${tempcapital} SET Votos='0',Porcentaje='0',Boletin='0', Escrutado='0' WHERE 1` 
           rows = await db.query(
             temp, 
             [offset, config.listPerPage]
@@ -316,7 +318,7 @@ async function InsertAll(page = 1){
           let tempdepartamento = departamento.replace(/\s/g, '_')
           tempdepartamento = tempdepartamento.replace(/\./g,'_')
 
-          temp = `UPDATE departamento_${tempdepartamento} SET Votos='0',Porcentaje='0',Boletin='0' WHERE 1` 
+          temp = `UPDATE departamento_${tempdepartamento} SET Votos='0',Porcentaje='0',Boletin='0', Escrutado='0' WHERE 1` 
           rows = await db.query(
             temp, 
             [offset, config.listPerPage]
@@ -334,6 +336,50 @@ async function InsertAll(page = 1){
           
     }
     
+    async function AnadirColumna(page = 1){ 
+
+      let offset = helper.getOffset(page, config.listPerPage);
+      
+        let temp = `ALTER TABLE nacional MODIFY Porcentaje decimal(4,2)` 
+        let rows = await db.query(
+          temp, 
+          [offset, config.listPerPage]
+        );
+
+        capitales.map(async (capital) => {
+          let tempcapital = capital.replace(/\s/g, '_')
+          tempcapital = tempcapital.replace(/\./g,'_')
+
+          temp = `ALTER TABLE capital_${tempcapital} MODIFY Porcentaje decimal(4,2)` 
+          rows = await db.query(
+            temp, 
+            [offset, config.listPerPage]
+          );
+
+        })
+
+        departamentos.map(async (departamento) => {
+          let tempdepartamento = departamento.replace(/\s/g, '_')
+          tempdepartamento = tempdepartamento.replace(/\./g,'_')
+
+          temp = `ALTER TABLE departamento_${tempdepartamento} MODIFY Porcentaje decimal(4,2)` 
+          rows = await db.query(
+            temp, 
+            [offset, config.listPerPage]
+          );
+        })
+
+
+        const data = helper.emptyOrRows(rows);
+        const meta = {page};
+      
+        return {
+          data,
+          meta
+        }
+    
+
+    }
 
   module.exports = {
     ReadCandidatosTXT,
@@ -342,5 +388,6 @@ async function InsertAll(page = 1){
     InsertCandidatosDepartamentos,
     InsertAll,
     VaciarTablas,
-    TodoCero
+    TodoCero,
+    AnadirColumna
   }
