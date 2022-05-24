@@ -13,6 +13,7 @@ app.use(
 app.use('/clave', require('./routes/api/claves'));
 app.use('/descargaDatos', require('./routes/api/descargaDatos'));
 app.use('/consultas', require('./routes/api/consultas'));
+app.use('/xml', require('./routes/api/xml'));
 
 app.get('/', (req, res) => {
   res.json({'message': 'ok'});
