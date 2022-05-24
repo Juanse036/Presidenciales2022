@@ -1,0 +1,2337 @@
+-- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
+--
+-- Host: localhost    Database: presidenciales2022
+-- ------------------------------------------------------
+-- Server version	10.4.24-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `capital_arauca`
+--
+
+DROP TABLE IF EXISTS `capital_arauca`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_arauca` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_arauca`
+--
+
+LOCK TABLES `capital_arauca` WRITE;
+/*!40000 ALTER TABLE `capital_arauca` DISABLE KEYS */;
+INSERT INTO `capital_arauca` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',2796,'011,58',3,'ARAUCA','PRESIDENTE','068,62',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',3527,'014,60',3,'ARAUCA','PRESIDENTE','068,62',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',2580,'010,68',3,'ARAUCA','PRESIDENTE','068,62',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',2406,'009,96',3,'ARAUCA','PRESIDENTE','068,62',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4120,'017,06',3,'ARAUCA','PRESIDENTE','068,62',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1753,'007,26',3,'ARAUCA','PRESIDENTE','068,62',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',1273,'005,27',3,'ARAUCA','PRESIDENTE','068,62',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',2979,'012,34',3,'ARAUCA','PRESIDENTE','068,62',NULL);
+/*!40000 ALTER TABLE `capital_arauca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_armenia`
+--
+
+DROP TABLE IF EXISTS `capital_armenia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_armenia` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_armenia`
+--
+
+LOCK TABLES `capital_armenia` WRITE;
+/*!40000 ALTER TABLE `capital_armenia` DISABLE KEYS */;
+INSERT INTO `capital_armenia` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',6251,'012,58',3,'ARMENIA','PRESIDENTE','046,09',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',5826,'011,73',3,'ARMENIA','PRESIDENTE','046,09',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',7538,'015,18',3,'ARMENIA','PRESIDENTE','046,09',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',4678,'009,42',3,'ARMENIA','PRESIDENTE','046,09',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',5024,'010,11',3,'ARMENIA','PRESIDENTE','046,09',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',4946,'009,96',3,'ARMENIA','PRESIDENTE','046,09',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',5435,'010,94',3,'ARMENIA','PRESIDENTE','046,09',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',5614,'011,30',3,'ARMENIA','PRESIDENTE','046,09',NULL);
+/*!40000 ALTER TABLE `capital_armenia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_barranquilla`
+--
+
+DROP TABLE IF EXISTS `capital_barranquilla`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_barranquilla` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_barranquilla`
+--
+
+LOCK TABLES `capital_barranquilla` WRITE;
+/*!40000 ALTER TABLE `capital_barranquilla` DISABLE KEYS */;
+INSERT INTO `capital_barranquilla` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',0,'000,00',3,'BARRANQUILLA','PRESIDENTE','000,00',NULL);
+/*!40000 ALTER TABLE `capital_barranquilla` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_bogota__d_c_`
+--
+
+DROP TABLE IF EXISTS `capital_bogota__d_c_`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_bogota__d_c_` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_bogota__d_c_`
+--
+
+LOCK TABLES `capital_bogota__d_c_` WRITE;
+/*!40000 ALTER TABLE `capital_bogota__d_c_` DISABLE KEYS */;
+INSERT INTO `capital_bogota__d_c_` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',65702,'011,30',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',62616,'010,77',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',67021,'011,53',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',69584,'011,97',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',67345,'011,59',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',61137,'010,52',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',61888,'010,65',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',63924,'011,00',3,'BOGOTA. D.C.','PRESIDENTE','025,03',NULL);
+/*!40000 ALTER TABLE `capital_bogota__d_c_` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_bucaramanga`
+--
+
+DROP TABLE IF EXISTS `capital_bucaramanga`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_bucaramanga` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_bucaramanga`
+--
+
+LOCK TABLES `capital_bucaramanga` WRITE;
+/*!40000 ALTER TABLE `capital_bucaramanga` DISABLE KEYS */;
+INSERT INTO `capital_bucaramanga` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',23638,'007,85',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',23541,'007,82',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',23910,'007,94',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',23449,'007,79',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',23790,'007,90',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',112237,'037,28',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',23648,'007,85',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',23233,'007,71',3,'BUCARAMANGA','PRESIDENTE','092,53',NULL);
+/*!40000 ALTER TABLE `capital_bucaramanga` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_cali`
+--
+
+DROP TABLE IF EXISTS `capital_cali`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_cali` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_cali`
+--
+
+LOCK TABLES `capital_cali` WRITE;
+/*!40000 ALTER TABLE `capital_cali` DISABLE KEYS */;
+INSERT INTO `capital_cali` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',44189,'011,48',3,'CALI','PRESIDENTE','053,68',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',40759,'010,59',3,'CALI','PRESIDENTE','053,68',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',44686,'011,61',3,'CALI','PRESIDENTE','053,68',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',40670,'010,57',3,'CALI','PRESIDENTE','053,68',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',38924,'010,11',3,'CALI','PRESIDENTE','053,68',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',43670,'011,34',3,'CALI','PRESIDENTE','053,68',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',42936,'011,15',3,'CALI','PRESIDENTE','053,68',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',44379,'011,53',3,'CALI','PRESIDENTE','053,68',NULL);
+/*!40000 ALTER TABLE `capital_cali` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_cartagena`
+--
+
+DROP TABLE IF EXISTS `capital_cartagena`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_cartagena` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_cartagena`
+--
+
+LOCK TABLES `capital_cartagena` WRITE;
+/*!40000 ALTER TABLE `capital_cartagena` DISABLE KEYS */;
+INSERT INTO `capital_cartagena` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',0,'000,00',3,'CARTAGENA','PRESIDENTE','000,00',NULL);
+/*!40000 ALTER TABLE `capital_cartagena` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_cucuta`
+--
+
+DROP TABLE IF EXISTS `capital_cucuta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_cucuta` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_cucuta`
+--
+
+LOCK TABLES `capital_cucuta` WRITE;
+/*!40000 ALTER TABLE `capital_cucuta` DISABLE KEYS */;
+INSERT INTO `capital_cucuta` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',29068,'007,78',3,'CUCUTA','PRESIDENTE','095,77',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',29156,'007,80',3,'CUCUTA','PRESIDENTE','095,77',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',29532,'007,90',3,'CUCUTA','PRESIDENTE','095,77',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',29659,'007,93',3,'CUCUTA','PRESIDENTE','095,77',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',29837,'007,98',3,'CUCUTA','PRESIDENTE','095,77',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',137725,'036,86',3,'CUCUTA','PRESIDENTE','095,77',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',29561,'007,91',3,'CUCUTA','PRESIDENTE','095,77',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',29704,'007,95',3,'CUCUTA','PRESIDENTE','095,77',NULL);
+/*!40000 ALTER TABLE `capital_cucuta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_florencia`
+--
+
+DROP TABLE IF EXISTS `capital_florencia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_florencia` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_florencia`
+--
+
+LOCK TABLES `capital_florencia` WRITE;
+/*!40000 ALTER TABLE `capital_florencia` DISABLE KEYS */;
+INSERT INTO `capital_florencia` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',4584,'013,58',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',2439,'007,22',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',4397,'013,02',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',3113,'009,22',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4545,'013,46',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',3363,'009,96',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',3528,'010,45',3,'FLORENCIA','PRESIDENTE','062,31',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',4380,'012,97',3,'FLORENCIA','PRESIDENTE','062,31',NULL);
+/*!40000 ALTER TABLE `capital_florencia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_ibague`
+--
+
+DROP TABLE IF EXISTS `capital_ibague`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_ibague` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_ibague`
+--
+
+LOCK TABLES `capital_ibague` WRITE;
+/*!40000 ALTER TABLE `capital_ibague` DISABLE KEYS */;
+INSERT INTO `capital_ibague` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',16725,'013,28',3,'IBAGUE','PRESIDENTE','066,08',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',14222,'011,29',3,'IBAGUE','PRESIDENTE','066,08',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',12056,'009,57',3,'IBAGUE','PRESIDENTE','066,08',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',12103,'009,61',3,'IBAGUE','PRESIDENTE','066,08',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',15245,'012,11',3,'IBAGUE','PRESIDENTE','066,08',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',15718,'012,48',3,'IBAGUE','PRESIDENTE','066,08',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',11641,'009,24',3,'IBAGUE','PRESIDENTE','066,08',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',13339,'010,59',3,'IBAGUE','PRESIDENTE','066,08',NULL);
+/*!40000 ALTER TABLE `capital_ibague` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_inirida`
+--
+
+DROP TABLE IF EXISTS `capital_inirida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_inirida` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_inirida`
+--
+
+LOCK TABLES `capital_inirida` WRITE;
+/*!40000 ALTER TABLE `capital_inirida` DISABLE KEYS */;
+INSERT INTO `capital_inirida` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',900,'023,52',3,'INIRIDA','PRESIDENTE','034,32',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',797,'020,83',3,'INIRIDA','PRESIDENTE','034,32',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',279,'007,29',3,'INIRIDA','PRESIDENTE','034,32',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',792,'020,70',3,'INIRIDA','PRESIDENTE','034,32',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',0,'000,00',3,'INIRIDA','PRESIDENTE','034,32',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'INIRIDA','PRESIDENTE','034,32',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',605,'015,81',3,'INIRIDA','PRESIDENTE','034,32',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',237,'006,19',3,'INIRIDA','PRESIDENTE','034,32',NULL);
+/*!40000 ALTER TABLE `capital_inirida` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_leticia`
+--
+
+DROP TABLE IF EXISTS `capital_leticia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_leticia` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_leticia`
+--
+
+LOCK TABLES `capital_leticia` WRITE;
+/*!40000 ALTER TABLE `capital_leticia` DISABLE KEYS */;
+INSERT INTO `capital_leticia` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1013,'016,04',3,'LETICIA','PRESIDENTE','033,94',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',535,'008,47',3,'LETICIA','PRESIDENTE','033,94',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',699,'011,06',3,'LETICIA','PRESIDENTE','033,94',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',212,'003,35',3,'LETICIA','PRESIDENTE','033,94',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',300,'004,75',3,'LETICIA','PRESIDENTE','033,94',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1614,'025,55',3,'LETICIA','PRESIDENTE','033,94',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',139,'002,20',3,'LETICIA','PRESIDENTE','033,94',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',444,'007,03',3,'LETICIA','PRESIDENTE','033,94',NULL);
+/*!40000 ALTER TABLE `capital_leticia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_manizales`
+--
+
+DROP TABLE IF EXISTS `capital_manizales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_manizales` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_manizales`
+--
+
+LOCK TABLES `capital_manizales` WRITE;
+/*!40000 ALTER TABLE `capital_manizales` DISABLE KEYS */;
+INSERT INTO `capital_manizales` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9692,'011,65',3,'MANIZALES','PRESIDENTE','061,64',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',8528,'010,25',3,'MANIZALES','PRESIDENTE','061,64',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',9558,'011,48',3,'MANIZALES','PRESIDENTE','061,64',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',9134,'010,97',3,'MANIZALES','PRESIDENTE','061,64',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',7867,'009,45',3,'MANIZALES','PRESIDENTE','061,64',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',10313,'012,39',3,'MANIZALES','PRESIDENTE','061,64',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8864,'010,65',3,'MANIZALES','PRESIDENTE','061,64',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',9786,'011,76',3,'MANIZALES','PRESIDENTE','061,64',NULL);
+/*!40000 ALTER TABLE `capital_manizales` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_medellin`
+--
+
+DROP TABLE IF EXISTS `capital_medellin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_medellin` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_medellin`
+--
+
+LOCK TABLES `capital_medellin` WRITE;
+/*!40000 ALTER TABLE `capital_medellin` DISABLE KEYS */;
+INSERT INTO `capital_medellin` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',0,'000,00',3,'MEDELLIN','PRESIDENTE','000,00',NULL);
+/*!40000 ALTER TABLE `capital_medellin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_mitu`
+--
+
+DROP TABLE IF EXISTS `capital_mitu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_mitu` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_mitu`
+--
+
+LOCK TABLES `capital_mitu` WRITE;
+/*!40000 ALTER TABLE `capital_mitu` DISABLE KEYS */;
+INSERT INTO `capital_mitu` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',649,'022,62',3,'MITU','PRESIDENTE','036,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',265,'009,23',3,'MITU','PRESIDENTE','036,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',476,'016,59',3,'MITU','PRESIDENTE','036,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',263,'009,17',3,'MITU','PRESIDENTE','036,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',499,'017,39',3,'MITU','PRESIDENTE','036,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'MITU','PRESIDENTE','036,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',118,'004,11',3,'MITU','PRESIDENTE','036,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',598,'020,85',3,'MITU','PRESIDENTE','036,00',NULL);
+/*!40000 ALTER TABLE `capital_mitu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_mocoa`
+--
+
+DROP TABLE IF EXISTS `capital_mocoa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_mocoa` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_mocoa`
+--
+
+LOCK TABLES `capital_mocoa` WRITE;
+/*!40000 ALTER TABLE `capital_mocoa` DISABLE KEYS */;
+INSERT INTO `capital_mocoa` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1471,'009,26',3,'MOCOA','PRESIDENTE','100,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',1325,'008,34',3,'MOCOA','PRESIDENTE','100,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',944,'005,94',3,'MOCOA','PRESIDENTE','100,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',2176,'013,70',3,'MOCOA','PRESIDENTE','100,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',1714,'010,79',3,'MOCOA','PRESIDENTE','100,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1989,'012,52',3,'MOCOA','PRESIDENTE','100,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',1780,'011,20',3,'MOCOA','PRESIDENTE','100,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',2889,'018,19',3,'MOCOA','PRESIDENTE','100,00',NULL);
+/*!40000 ALTER TABLE `capital_mocoa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_monteria`
+--
+
+DROP TABLE IF EXISTS `capital_monteria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_monteria` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_monteria`
+--
+
+LOCK TABLES `capital_monteria` WRITE;
+/*!40000 ALTER TABLE `capital_monteria` DISABLE KEYS */;
+INSERT INTO `capital_monteria` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',16656,'007,81',3,'MONTERIA','PRESIDENTE','096,20',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',16717,'007,84',3,'MONTERIA','PRESIDENTE','096,20',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',16094,'007,54',3,'MONTERIA','PRESIDENTE','096,20',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',16616,'007,79',3,'MONTERIA','PRESIDENTE','096,20',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',17103,'008,02',3,'MONTERIA','PRESIDENTE','096,20',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',80934,'037,96',3,'MONTERIA','PRESIDENTE','096,20',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',16278,'007,63',3,'MONTERIA','PRESIDENTE','096,20',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',16431,'007,70',3,'MONTERIA','PRESIDENTE','096,20',NULL);
+/*!40000 ALTER TABLE `capital_monteria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_neiva`
+--
+
+DROP TABLE IF EXISTS `capital_neiva`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_neiva` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_neiva`
+--
+
+LOCK TABLES `capital_neiva` WRITE;
+/*!40000 ALTER TABLE `capital_neiva` DISABLE KEYS */;
+INSERT INTO `capital_neiva` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',13506,'007,84',3,'NEIVA','PRESIDENTE','095,30',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',13135,'007,62',3,'NEIVA','PRESIDENTE','095,30',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',13040,'007,56',3,'NEIVA','PRESIDENTE','095,30',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',13642,'007,91',3,'NEIVA','PRESIDENTE','095,30',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',13725,'007,96',3,'NEIVA','PRESIDENTE','095,30',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',64701,'037,55',3,'NEIVA','PRESIDENTE','095,30',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',13504,'007,83',3,'NEIVA','PRESIDENTE','095,30',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',13444,'007,80',3,'NEIVA','PRESIDENTE','095,30',NULL);
+/*!40000 ALTER TABLE `capital_neiva` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_pasto`
+--
+
+DROP TABLE IF EXISTS `capital_pasto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_pasto` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_pasto`
+--
+
+LOCK TABLES `capital_pasto` WRITE;
+/*!40000 ALTER TABLE `capital_pasto` DISABLE KEYS */;
+INSERT INTO `capital_pasto` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',14471,'007,54',3,'PASTO','PRESIDENTE','095,98',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',15136,'007,89',3,'PASTO','PRESIDENTE','095,98',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',14970,'007,80',3,'PASTO','PRESIDENTE','095,98',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',15155,'007,90',3,'PASTO','PRESIDENTE','095,98',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',14962,'007,80',3,'PASTO','PRESIDENTE','095,98',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',71842,'037,47',3,'PASTO','PRESIDENTE','095,98',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',15126,'007,89',3,'PASTO','PRESIDENTE','095,98',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',15315,'007,98',3,'PASTO','PRESIDENTE','095,98',NULL);
+/*!40000 ALTER TABLE `capital_pasto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_pereira`
+--
+
+DROP TABLE IF EXISTS `capital_pereira`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_pereira` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_pereira`
+--
+
+LOCK TABLES `capital_pereira` WRITE;
+/*!40000 ALTER TABLE `capital_pereira` DISABLE KEYS */;
+INSERT INTO `capital_pereira` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9506,'011,50',3,'PEREIRA','PRESIDENTE','048,65',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',10659,'012,90',3,'PEREIRA','PRESIDENTE','048,65',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',6720,'008,13',3,'PEREIRA','PRESIDENTE','048,65',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',11326,'013,71',3,'PEREIRA','PRESIDENTE','048,65',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',8813,'010,66',3,'PEREIRA','PRESIDENTE','048,65',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',9094,'011,01',3,'PEREIRA','PRESIDENTE','048,65',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8054,'009,75',3,'PEREIRA','PRESIDENTE','048,65',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',9127,'011,05',3,'PEREIRA','PRESIDENTE','048,65',NULL);
+/*!40000 ALTER TABLE `capital_pereira` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_popayan`
+--
+
+DROP TABLE IF EXISTS `capital_popayan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_popayan` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_popayan`
+--
+
+LOCK TABLES `capital_popayan` WRITE;
+/*!40000 ALTER TABLE `capital_popayan` DISABLE KEYS */;
+INSERT INTO `capital_popayan` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',10392,'009,82',3,'POPAYAN','PRESIDENTE','100,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',11325,'010,70',3,'POPAYAN','PRESIDENTE','100,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',13079,'012,36',3,'POPAYAN','PRESIDENTE','100,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',12997,'012,28',3,'POPAYAN','PRESIDENTE','100,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',14772,'013,96',3,'POPAYAN','PRESIDENTE','100,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',11247,'010,63',3,'POPAYAN','PRESIDENTE','100,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',12702,'012,00',3,'POPAYAN','PRESIDENTE','100,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',9738,'009,20',3,'POPAYAN','PRESIDENTE','100,00',NULL);
+/*!40000 ALTER TABLE `capital_popayan` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_puerto_carreño`
+--
+
+DROP TABLE IF EXISTS `capital_puerto_carreño`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_puerto_carreño` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_puerto_carreño`
+--
+
+LOCK TABLES `capital_puerto_carreño` WRITE;
+/*!40000 ALTER TABLE `capital_puerto_carreño` DISABLE KEYS */;
+INSERT INTO `capital_puerto_carreño` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1695,'024,13',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',924,'013,15',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',699,'009,95',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1457,'020,74',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',293,'004,17',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1023,'014,56',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',390,'005,55',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',179,'002,54',3,'PUERTO CARREÑO','PRESIDENTE','074,54',NULL);
+/*!40000 ALTER TABLE `capital_puerto_carreño` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_quibdo`
+--
+
+DROP TABLE IF EXISTS `capital_quibdo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_quibdo` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_quibdo`
+--
+
+LOCK TABLES `capital_quibdo` WRITE;
+/*!40000 ALTER TABLE `capital_quibdo` DISABLE KEYS */;
+INSERT INTO `capital_quibdo` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',3463,'009,83',3,'QUIBDO','PRESIDENTE','100,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',2611,'007,41',3,'QUIBDO','PRESIDENTE','100,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',4480,'012,71',3,'QUIBDO','PRESIDENTE','100,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1528,'004,33',3,'QUIBDO','PRESIDENTE','100,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4625,'013,13',3,'QUIBDO','PRESIDENTE','100,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',3606,'010,23',3,'QUIBDO','PRESIDENTE','100,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',4925,'013,98',3,'QUIBDO','PRESIDENTE','100,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',4781,'013,57',3,'QUIBDO','PRESIDENTE','100,00',NULL);
+/*!40000 ALTER TABLE `capital_quibdo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_riohacha`
+--
+
+DROP TABLE IF EXISTS `capital_riohacha`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_riohacha` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_riohacha`
+--
+
+LOCK TABLES `capital_riohacha` WRITE;
+/*!40000 ALTER TABLE `capital_riohacha` DISABLE KEYS */;
+INSERT INTO `capital_riohacha` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',6960,'007,64',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',7169,'007,87',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',7130,'007,82',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',7069,'007,76',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',7182,'007,88',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',33371,'036,63',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',7244,'007,95',3,'RIOHACHA','PRESIDENTE','096,87',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',7499,'008,23',3,'RIOHACHA','PRESIDENTE','096,87',NULL);
+/*!40000 ALTER TABLE `capital_riohacha` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_san_andres`
+--
+
+DROP TABLE IF EXISTS `capital_san_andres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_san_andres` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_san_andres`
+--
+
+LOCK TABLES `capital_san_andres` WRITE;
+/*!40000 ALTER TABLE `capital_san_andres` DISABLE KEYS */;
+INSERT INTO `capital_san_andres` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1665,'025,34',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',225,'003,42',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',779,'011,85',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',755,'011,49',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',628,'009,56',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',460,'007,00',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',903,'013,74',3,'SAN ANDRES','PRESIDENTE','026,66',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',235,'003,57',3,'SAN ANDRES','PRESIDENTE','026,66',NULL);
+/*!40000 ALTER TABLE `capital_san_andres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_san_jose_del_guaviare`
+--
+
+DROP TABLE IF EXISTS `capital_san_jose_del_guaviare`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_san_jose_del_guaviare` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_san_jose_del_guaviare`
+--
+
+LOCK TABLES `capital_san_jose_del_guaviare` WRITE;
+/*!40000 ALTER TABLE `capital_san_jose_del_guaviare` DISABLE KEYS */;
+INSERT INTO `capital_san_jose_del_guaviare` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1335,'018,29',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',711,'009,74',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',710,'009,72',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1000,'013,70',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',984,'013,48',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',171,'002,34',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',705,'009,66',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',1009,'013,82',3,'SAN JOSE DEL GUAVIARE','PRESIDENTE','038,84',NULL);
+/*!40000 ALTER TABLE `capital_san_jose_del_guaviare` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_santa_marta`
+--
+
+DROP TABLE IF EXISTS `capital_santa_marta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_santa_marta` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_santa_marta`
+--
+
+LOCK TABLES `capital_santa_marta` WRITE;
+/*!40000 ALTER TABLE `capital_santa_marta` DISABLE KEYS */;
+INSERT INTO `capital_santa_marta` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',18145,'007,86',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',17947,'007,77',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',18186,'007,88',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',18302,'007,93',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',18406,'007,97',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',86454,'037,46',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',17862,'007,73',3,'SANTA MARTA','PRESIDENTE','096,48',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',17475,'007,57',3,'SANTA MARTA','PRESIDENTE','096,48',NULL);
+/*!40000 ALTER TABLE `capital_santa_marta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_sincelejo`
+--
+
+DROP TABLE IF EXISTS `capital_sincelejo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_sincelejo` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_sincelejo`
+--
+
+LOCK TABLES `capital_sincelejo` WRITE;
+/*!40000 ALTER TABLE `capital_sincelejo` DISABLE KEYS */;
+INSERT INTO `capital_sincelejo` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',10470,'007,92',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',10424,'007,89',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',10294,'007,79',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',10600,'008,02',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',10203,'007,72',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',48318,'036,57',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',10544,'007,98',3,'SINCELEJO','PRESIDENTE','096,18',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',11045,'008,36',3,'SINCELEJO','PRESIDENTE','096,18',NULL);
+/*!40000 ALTER TABLE `capital_sincelejo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_tunja`
+--
+
+DROP TABLE IF EXISTS `capital_tunja`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_tunja` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_tunja`
+--
+
+LOCK TABLES `capital_tunja` WRITE;
+/*!40000 ALTER TABLE `capital_tunja` DISABLE KEYS */;
+INSERT INTO `capital_tunja` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',7114,'012,96',3,'TUNJA','PRESIDENTE','100,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',4463,'008,13',3,'TUNJA','PRESIDENTE','100,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',6634,'012,09',3,'TUNJA','PRESIDENTE','100,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',5137,'009,36',3,'TUNJA','PRESIDENTE','100,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',5841,'010,64',3,'TUNJA','PRESIDENTE','100,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',6763,'012,32',3,'TUNJA','PRESIDENTE','100,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',7064,'012,87',3,'TUNJA','PRESIDENTE','100,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',6461,'011,77',3,'TUNJA','PRESIDENTE','100,00',NULL);
+/*!40000 ALTER TABLE `capital_tunja` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_valledupar`
+--
+
+DROP TABLE IF EXISTS `capital_valledupar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_valledupar` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_valledupar`
+--
+
+LOCK TABLES `capital_valledupar` WRITE;
+/*!40000 ALTER TABLE `capital_valledupar` DISABLE KEYS */;
+INSERT INTO `capital_valledupar` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',15759,'007,73',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',16051,'007,88',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',16096,'007,90',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',15778,'007,74',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',16159,'007,93',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',76678,'037,64',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',15901,'007,80',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',15323,'007,52',3,'VALLEDUPAR','PRESIDENTE','096,70',NULL);
+/*!40000 ALTER TABLE `capital_valledupar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_villavicencio`
+--
+
+DROP TABLE IF EXISTS `capital_villavicencio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_villavicencio` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_villavicencio`
+--
+
+LOCK TABLES `capital_villavicencio` WRITE;
+/*!40000 ALTER TABLE `capital_villavicencio` DISABLE KEYS */;
+INSERT INTO `capital_villavicencio` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9840,'011,60',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',8237,'009,71',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',6266,'007,39',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',10007,'011,80',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',9997,'011,79',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',9840,'011,60',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8345,'009,84',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',10233,'012,07',3,'VILLAVICENCIO','PRESIDENTE','053,40',NULL);
+/*!40000 ALTER TABLE `capital_villavicencio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `capital_yopal`
+--
+
+DROP TABLE IF EXISTS `capital_yopal`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `capital_yopal` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `capital_yopal`
+--
+
+LOCK TABLES `capital_yopal` WRITE;
+/*!40000 ALTER TABLE `capital_yopal` DISABLE KEYS */;
+INSERT INTO `capital_yopal` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',5733,'007,97',3,'YOPAL','PRESIDENTE','092,52',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',5688,'007,91',3,'YOPAL','PRESIDENTE','092,52',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',5695,'007,92',3,'YOPAL','PRESIDENTE','092,52',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',5646,'007,85',3,'YOPAL','PRESIDENTE','092,52',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',5652,'007,86',3,'YOPAL','PRESIDENTE','092,52',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',26368,'036,68',3,'YOPAL','PRESIDENTE','092,52',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',5666,'007,88',3,'YOPAL','PRESIDENTE','092,52',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',5778,'008,03',3,'YOPAL','PRESIDENTE','092,52',NULL);
+/*!40000 ALTER TABLE `capital_yopal` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_amazonas`
+--
+
+DROP TABLE IF EXISTS `departamento_amazonas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_amazonas` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_amazonas`
+--
+
+LOCK TABLES `departamento_amazonas` WRITE;
+/*!40000 ALTER TABLE `departamento_amazonas` DISABLE KEYS */;
+INSERT INTO `departamento_amazonas` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1013,'016,04',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',535,'008,47',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',699,'011,06',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',212,'003,35',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',300,'004,75',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1614,'025,55',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',139,'002,20',3,'AMAZONAS','PRESIDENTE','025,34',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',444,'007,03',3,'AMAZONAS','PRESIDENTE','025,34',NULL);
+/*!40000 ALTER TABLE `departamento_amazonas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_antioquia`
+--
+
+DROP TABLE IF EXISTS `departamento_antioquia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_antioquia` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_antioquia`
+--
+
+LOCK TABLES `departamento_antioquia` WRITE;
+/*!40000 ALTER TABLE `departamento_antioquia` DISABLE KEYS */;
+INSERT INTO `departamento_antioquia` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',2058,'007,86',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',1982,'007,57',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',2175,'008,31',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',2218,'008,48',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',1863,'007,12',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',9567,'036,58',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',2084,'007,96',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',2217,'008,47',3,'ANTIOQUIA','PRESIDENTE','000,75',NULL);
+/*!40000 ALTER TABLE `departamento_antioquia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_arauca`
+--
+
+DROP TABLE IF EXISTS `departamento_arauca`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_arauca` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_arauca`
+--
+
+LOCK TABLES `departamento_arauca` WRITE;
+/*!40000 ALTER TABLE `departamento_arauca` DISABLE KEYS */;
+INSERT INTO `departamento_arauca` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',2796,'011,58',3,'ARAUCA','PRESIDENTE','024,64',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',3527,'014,60',3,'ARAUCA','PRESIDENTE','024,64',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',2580,'010,68',3,'ARAUCA','PRESIDENTE','024,64',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',2406,'009,96',3,'ARAUCA','PRESIDENTE','024,64',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4120,'017,06',3,'ARAUCA','PRESIDENTE','024,64',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1753,'007,26',3,'ARAUCA','PRESIDENTE','024,64',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',1273,'005,27',3,'ARAUCA','PRESIDENTE','024,64',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',2979,'012,34',3,'ARAUCA','PRESIDENTE','024,64',NULL);
+/*!40000 ALTER TABLE `departamento_arauca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_atlantico`
+--
+
+DROP TABLE IF EXISTS `departamento_atlantico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_atlantico` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_atlantico`
+--
+
+LOCK TABLES `departamento_atlantico` WRITE;
+/*!40000 ALTER TABLE `departamento_atlantico` DISABLE KEYS */;
+INSERT INTO `departamento_atlantico` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1025,'008,34',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',888,'007,23',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',1024,'008,34',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1001,'008,15',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',989,'008,05',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',4456,'036,29',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',912,'007,42',3,'ATLANTICO','PRESIDENTE','000,97',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',945,'007,69',3,'ATLANTICO','PRESIDENTE','000,97',NULL);
+/*!40000 ALTER TABLE `departamento_atlantico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_bogota_d_c_`
+--
+
+DROP TABLE IF EXISTS `departamento_bogota_d_c_`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_bogota_d_c_` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_bogota_d_c_`
+--
+
+LOCK TABLES `departamento_bogota_d_c_` WRITE;
+/*!40000 ALTER TABLE `departamento_bogota_d_c_` DISABLE KEYS */;
+INSERT INTO `departamento_bogota_d_c_` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',65702,'011,30',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',62616,'010,77',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',67021,'011,53',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',69584,'011,97',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',67345,'011,59',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',61137,'010,52',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',61888,'010,65',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',63924,'011,00',3,'BOGOTA D.C.','PRESIDENTE','025,03',NULL);
+/*!40000 ALTER TABLE `departamento_bogota_d_c_` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_bolivar`
+--
+
+DROP TABLE IF EXISTS `departamento_bolivar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_bolivar` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_bolivar`
+--
+
+LOCK TABLES `departamento_bolivar` WRITE;
+/*!40000 ALTER TABLE `departamento_bolivar` DISABLE KEYS */;
+INSERT INTO `departamento_bolivar` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',892,'007,27',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',874,'007,12',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',1011,'008,24',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1066,'008,69',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',1035,'008,44',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',4409,'035,95',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',925,'007,54',3,'BOLIVAR','PRESIDENTE','001,11',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',1017,'008,29',3,'BOLIVAR','PRESIDENTE','001,11',NULL);
+/*!40000 ALTER TABLE `departamento_bolivar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_boyaca`
+--
+
+DROP TABLE IF EXISTS `departamento_boyaca`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_boyaca` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_boyaca`
+--
+
+LOCK TABLES `departamento_boyaca` WRITE;
+/*!40000 ALTER TABLE `departamento_boyaca` DISABLE KEYS */;
+INSERT INTO `departamento_boyaca` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',13303,'012,54',3,'BOYACA','PRESIDENTE','024,92',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',11859,'011,17',3,'BOYACA','PRESIDENTE','024,92',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',12950,'012,20',3,'BOYACA','PRESIDENTE','024,92',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',9585,'009,03',3,'BOYACA','PRESIDENTE','024,92',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',11641,'010,97',3,'BOYACA','PRESIDENTE','024,92',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',11869,'011,18',3,'BOYACA','PRESIDENTE','024,92',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',11697,'011,02',3,'BOYACA','PRESIDENTE','024,92',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',12630,'011,90',3,'BOYACA','PRESIDENTE','024,92',NULL);
+/*!40000 ALTER TABLE `departamento_boyaca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_caldas`
+--
+
+DROP TABLE IF EXISTS `departamento_caldas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_caldas` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_caldas`
+--
+
+LOCK TABLES `departamento_caldas` WRITE;
+/*!40000 ALTER TABLE `departamento_caldas` DISABLE KEYS */;
+INSERT INTO `departamento_caldas` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9692,'011,65',3,'CALDAS','PRESIDENTE','025,08',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',8528,'010,25',3,'CALDAS','PRESIDENTE','025,08',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',9558,'011,48',3,'CALDAS','PRESIDENTE','025,08',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',9134,'010,97',3,'CALDAS','PRESIDENTE','025,08',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',7867,'009,45',3,'CALDAS','PRESIDENTE','025,08',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',10313,'012,39',3,'CALDAS','PRESIDENTE','025,08',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8864,'010,65',3,'CALDAS','PRESIDENTE','025,08',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',9786,'011,76',3,'CALDAS','PRESIDENTE','025,08',NULL);
+/*!40000 ALTER TABLE `departamento_caldas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_caqueta`
+--
+
+DROP TABLE IF EXISTS `departamento_caqueta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_caqueta` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_caqueta`
+--
+
+LOCK TABLES `departamento_caqueta` WRITE;
+/*!40000 ALTER TABLE `departamento_caqueta` DISABLE KEYS */;
+INSERT INTO `departamento_caqueta` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',4584,'013,58',3,'CAQUETA','PRESIDENTE','024,88',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',2439,'007,22',3,'CAQUETA','PRESIDENTE','024,88',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',4397,'013,02',3,'CAQUETA','PRESIDENTE','024,88',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',3113,'009,22',3,'CAQUETA','PRESIDENTE','024,88',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4545,'013,46',3,'CAQUETA','PRESIDENTE','024,88',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',3363,'009,96',3,'CAQUETA','PRESIDENTE','024,88',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',3528,'010,45',3,'CAQUETA','PRESIDENTE','024,88',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',4380,'012,97',3,'CAQUETA','PRESIDENTE','024,88',NULL);
+/*!40000 ALTER TABLE `departamento_caqueta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_casanare`
+--
+
+DROP TABLE IF EXISTS `departamento_casanare`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_casanare` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_casanare`
+--
+
+LOCK TABLES `departamento_casanare` WRITE;
+/*!40000 ALTER TABLE `departamento_casanare` DISABLE KEYS */;
+INSERT INTO `departamento_casanare` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',14663,'007,71',3,'CASANARE','PRESIDENTE','090,21',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',14734,'007,75',3,'CASANARE','PRESIDENTE','090,21',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',15078,'007,93',3,'CASANARE','PRESIDENTE','090,21',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',14913,'007,85',3,'CASANARE','PRESIDENTE','090,21',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',14842,'007,81',3,'CASANARE','PRESIDENTE','090,21',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',71131,'037,44',3,'CASANARE','PRESIDENTE','090,21',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',15106,'007,95',3,'CASANARE','PRESIDENTE','090,21',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',14876,'007,83',3,'CASANARE','PRESIDENTE','090,21',NULL);
+/*!40000 ALTER TABLE `departamento_casanare` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_cauca`
+--
+
+DROP TABLE IF EXISTS `departamento_cauca`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_cauca` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_cauca`
+--
+
+LOCK TABLES `departamento_cauca` WRITE;
+/*!40000 ALTER TABLE `departamento_cauca` DISABLE KEYS */;
+INSERT INTO `departamento_cauca` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',16527,'010,74',3,'CAUCA','PRESIDENTE','033,31',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',17432,'011,33',3,'CAUCA','PRESIDENTE','033,31',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',16562,'010,76',3,'CAUCA','PRESIDENTE','033,31',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',18793,'012,21',3,'CAUCA','PRESIDENTE','033,31',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',23238,'015,10',3,'CAUCA','PRESIDENTE','033,31',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',15050,'009,78',3,'CAUCA','PRESIDENTE','033,31',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',16731,'010,87',3,'CAUCA','PRESIDENTE','033,31',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',14462,'009,40',3,'CAUCA','PRESIDENTE','033,31',NULL);
+/*!40000 ALTER TABLE `departamento_cauca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_cesar`
+--
+
+DROP TABLE IF EXISTS `departamento_cesar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_cesar` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_cesar`
+--
+
+LOCK TABLES `departamento_cesar` WRITE;
+/*!40000 ALTER TABLE `departamento_cesar` DISABLE KEYS */;
+INSERT INTO `departamento_cesar` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',42480,'007,75',3,'CESAR','PRESIDENTE','096,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',43139,'007,87',3,'CESAR','PRESIDENTE','096,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',43163,'007,87',3,'CESAR','PRESIDENTE','096,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',42769,'007,80',3,'CESAR','PRESIDENTE','096,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',43417,'007,92',3,'CESAR','PRESIDENTE','096,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',203642,'037,16',3,'CESAR','PRESIDENTE','096,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',43135,'007,87',3,'CESAR','PRESIDENTE','096,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',42809,'007,81',3,'CESAR','PRESIDENTE','096,00',NULL);
+/*!40000 ALTER TABLE `departamento_cesar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_choco`
+--
+
+DROP TABLE IF EXISTS `departamento_choco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_choco` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_choco`
+--
+
+LOCK TABLES `departamento_choco` WRITE;
+/*!40000 ALTER TABLE `departamento_choco` DISABLE KEYS */;
+INSERT INTO `departamento_choco` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',4035,'010,13',3,'CHOCO','PRESIDENTE','025,18',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',3358,'008,43',3,'CHOCO','PRESIDENTE','025,18',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',4730,'011,88',3,'CHOCO','PRESIDENTE','025,18',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1749,'004,39',3,'CHOCO','PRESIDENTE','025,18',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',4770,'011,98',3,'CHOCO','PRESIDENTE','025,18',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',4118,'010,34',3,'CHOCO','PRESIDENTE','025,18',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',6390,'016,05',3,'CHOCO','PRESIDENTE','025,18',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',5002,'012,56',3,'CHOCO','PRESIDENTE','025,18',NULL);
+/*!40000 ALTER TABLE `departamento_choco` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_cordoba`
+--
+
+DROP TABLE IF EXISTS `departamento_cordoba`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_cordoba` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_cordoba`
+--
+
+LOCK TABLES `departamento_cordoba` WRITE;
+/*!40000 ALTER TABLE `departamento_cordoba` DISABLE KEYS */;
+INSERT INTO `departamento_cordoba` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',65277,'007,78',3,'CORDOBA','PRESIDENTE','096,17',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',66255,'007,90',3,'CORDOBA','PRESIDENTE','096,17',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',64987,'007,75',3,'CORDOBA','PRESIDENTE','096,17',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',65360,'007,79',3,'CORDOBA','PRESIDENTE','096,17',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',65589,'007,82',3,'CORDOBA','PRESIDENTE','096,17',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',315134,'037,58',3,'CORDOBA','PRESIDENTE','096,17',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',65251,'007,78',3,'CORDOBA','PRESIDENTE','096,17',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',65357,'007,79',3,'CORDOBA','PRESIDENTE','096,17',NULL);
+/*!40000 ALTER TABLE `departamento_cordoba` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_cundinamarca`
+--
+
+DROP TABLE IF EXISTS `departamento_cundinamarca`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_cundinamarca` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_cundinamarca`
+--
+
+LOCK TABLES `departamento_cundinamarca` WRITE;
+/*!40000 ALTER TABLE `departamento_cundinamarca` DISABLE KEYS */;
+INSERT INTO `departamento_cundinamarca` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',23452,'010,51',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',24967,'011,18',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',26797,'012,00',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',21472,'009,62',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',26188,'011,73',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',27864,'012,48',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',25291,'011,33',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',24384,'010,92',3,'CUNDINAMARCA','PRESIDENTE','025,04',NULL);
+/*!40000 ALTER TABLE `departamento_cundinamarca` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_guainia`
+--
+
+DROP TABLE IF EXISTS `departamento_guainia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_guainia` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_guainia`
+--
+
+LOCK TABLES `departamento_guainia` WRITE;
+/*!40000 ALTER TABLE `departamento_guainia` DISABLE KEYS */;
+INSERT INTO `departamento_guainia` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',900,'023,52',3,'GUAINIA','PRESIDENTE','024,21',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',797,'020,83',3,'GUAINIA','PRESIDENTE','024,21',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',279,'007,29',3,'GUAINIA','PRESIDENTE','024,21',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',792,'020,70',3,'GUAINIA','PRESIDENTE','024,21',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',0,'000,00',3,'GUAINIA','PRESIDENTE','024,21',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'GUAINIA','PRESIDENTE','024,21',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',605,'015,81',3,'GUAINIA','PRESIDENTE','024,21',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',237,'006,19',3,'GUAINIA','PRESIDENTE','024,21',NULL);
+/*!40000 ALTER TABLE `departamento_guainia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_guaviare`
+--
+
+DROP TABLE IF EXISTS `departamento_guaviare`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_guaviare` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_guaviare`
+--
+
+LOCK TABLES `departamento_guaviare` WRITE;
+/*!40000 ALTER TABLE `departamento_guaviare` DISABLE KEYS */;
+INSERT INTO `departamento_guaviare` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1335,'018,29',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',711,'009,74',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',710,'009,72',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1000,'013,70',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',984,'013,48',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',171,'002,34',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',705,'009,66',3,'GUAVIARE','PRESIDENTE','025,54',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',1009,'013,82',3,'GUAVIARE','PRESIDENTE','025,54',NULL);
+/*!40000 ALTER TABLE `departamento_guaviare` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_huila`
+--
+
+DROP TABLE IF EXISTS `departamento_huila`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_huila` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_huila`
+--
+
+LOCK TABLES `departamento_huila` WRITE;
+/*!40000 ALTER TABLE `departamento_huila` DISABLE KEYS */;
+INSERT INTO `departamento_huila` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',42747,'007,82',3,'HUILA','PRESIDENTE','095,53',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',42017,'007,69',3,'HUILA','PRESIDENTE','095,53',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',42852,'007,84',3,'HUILA','PRESIDENTE','095,53',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',43741,'008,01',3,'HUILA','PRESIDENTE','095,53',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',43378,'007,94',3,'HUILA','PRESIDENTE','095,53',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',202898,'037,16',3,'HUILA','PRESIDENTE','095,53',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',42643,'007,81',3,'HUILA','PRESIDENTE','095,53',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',43099,'007,89',3,'HUILA','PRESIDENTE','095,53',NULL);
+/*!40000 ALTER TABLE `departamento_huila` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_la_guajira`
+--
+
+DROP TABLE IF EXISTS `departamento_la_guajira`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_la_guajira` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_la_guajira`
+--
+
+LOCK TABLES `departamento_la_guajira` WRITE;
+/*!40000 ALTER TABLE `departamento_la_guajira` DISABLE KEYS */;
+INSERT INTO `departamento_la_guajira` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',31256,'007,72',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',32088,'007,93',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',31626,'007,81',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',31409,'007,76',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',31556,'007,79',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',150381,'037,17',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',31960,'007,89',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',31983,'007,90',3,'LA GUAJIRA','PRESIDENTE','096,27',NULL);
+/*!40000 ALTER TABLE `departamento_la_guajira` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_magdalena`
+--
+
+DROP TABLE IF EXISTS `departamento_magdalena`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_magdalena` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_magdalena`
+--
+
+LOCK TABLES `departamento_magdalena` WRITE;
+/*!40000 ALTER TABLE `departamento_magdalena` DISABLE KEYS */;
+INSERT INTO `departamento_magdalena` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',51407,'007,87',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',50659,'007,76',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',50676,'007,76',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',50743,'007,77',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',51695,'007,92',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',245950,'037,69',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',50427,'007,72',3,'MAGDALENA','PRESIDENTE','096,59',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',50366,'007,71',3,'MAGDALENA','PRESIDENTE','096,59',NULL);
+/*!40000 ALTER TABLE `departamento_magdalena` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_meta`
+--
+
+DROP TABLE IF EXISTS `departamento_meta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_meta` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_meta`
+--
+
+LOCK TABLES `departamento_meta` WRITE;
+/*!40000 ALTER TABLE `departamento_meta` DISABLE KEYS */;
+INSERT INTO `departamento_meta` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9840,'011,60',3,'META','PRESIDENTE','025,18',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',8237,'009,71',3,'META','PRESIDENTE','025,18',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',6266,'007,39',3,'META','PRESIDENTE','025,18',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',10007,'011,80',3,'META','PRESIDENTE','025,18',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',9997,'011,79',3,'META','PRESIDENTE','025,18',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',9840,'011,60',3,'META','PRESIDENTE','025,18',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8345,'009,84',3,'META','PRESIDENTE','025,18',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',10233,'012,07',3,'META','PRESIDENTE','025,18',NULL);
+/*!40000 ALTER TABLE `departamento_meta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_nariño`
+--
+
+DROP TABLE IF EXISTS `departamento_nariño`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_nariño` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_nariño`
+--
+
+LOCK TABLES `departamento_nariño` WRITE;
+/*!40000 ALTER TABLE `departamento_nariño` DISABLE KEYS */;
+INSERT INTO `departamento_nariño` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',62392,'007,75',3,'NARIÑO','PRESIDENTE','096,38',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',63761,'007,92',3,'NARIÑO','PRESIDENTE','096,38',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',63993,'007,95',3,'NARIÑO','PRESIDENTE','096,38',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',63322,'007,87',3,'NARIÑO','PRESIDENTE','096,38',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',63318,'007,87',3,'NARIÑO','PRESIDENTE','096,38',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',297566,'036,99',3,'NARIÑO','PRESIDENTE','096,38',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',63836,'007,93',3,'NARIÑO','PRESIDENTE','096,38',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',62881,'007,81',3,'NARIÑO','PRESIDENTE','096,38',NULL);
+/*!40000 ALTER TABLE `departamento_nariño` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_norte_de_san`
+--
+
+DROP TABLE IF EXISTS `departamento_norte_de_san`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_norte_de_san` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_norte_de_san`
+--
+
+LOCK TABLES `departamento_norte_de_san` WRITE;
+/*!40000 ALTER TABLE `departamento_norte_de_san` DISABLE KEYS */;
+INSERT INTO `departamento_norte_de_san` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',63353,'007,73',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',64128,'007,83',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',65014,'007,94',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',64668,'007,89',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',65446,'007,99',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',304244,'037,16',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',64136,'007,83',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',63224,'007,72',3,'NORTE DE SAN','PRESIDENTE','095,90',NULL);
+/*!40000 ALTER TABLE `departamento_norte_de_san` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_putumayo`
+--
+
+DROP TABLE IF EXISTS `departamento_putumayo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_putumayo` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_putumayo`
+--
+
+LOCK TABLES `departamento_putumayo` WRITE;
+/*!40000 ALTER TABLE `departamento_putumayo` DISABLE KEYS */;
+INSERT INTO `departamento_putumayo` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',2538,'010,22',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',2115,'008,52',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',2281,'009,19',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',3135,'012,63',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',2099,'008,45',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',3564,'014,36',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',1973,'007,95',3,'PUTUMAYO','PRESIDENTE','025,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',5267,'021,22',3,'PUTUMAYO','PRESIDENTE','025,00',NULL);
+/*!40000 ALTER TABLE `departamento_putumayo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_quindio`
+--
+
+DROP TABLE IF EXISTS `departamento_quindio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_quindio` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_quindio`
+--
+
+LOCK TABLES `departamento_quindio` WRITE;
+/*!40000 ALTER TABLE `departamento_quindio` DISABLE KEYS */;
+INSERT INTO `departamento_quindio` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',6251,'012,58',3,'QUINDIO','PRESIDENTE','025,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',5826,'011,73',3,'QUINDIO','PRESIDENTE','025,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',7538,'015,18',3,'QUINDIO','PRESIDENTE','025,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',4678,'009,42',3,'QUINDIO','PRESIDENTE','025,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',5024,'010,11',3,'QUINDIO','PRESIDENTE','025,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',4946,'009,96',3,'QUINDIO','PRESIDENTE','025,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',5435,'010,94',3,'QUINDIO','PRESIDENTE','025,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',5614,'011,30',3,'QUINDIO','PRESIDENTE','025,00',NULL);
+/*!40000 ALTER TABLE `departamento_quindio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_risaralda`
+--
+
+DROP TABLE IF EXISTS `departamento_risaralda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_risaralda` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_risaralda`
+--
+
+LOCK TABLES `departamento_risaralda` WRITE;
+/*!40000 ALTER TABLE `departamento_risaralda` DISABLE KEYS */;
+INSERT INTO `departamento_risaralda` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',9506,'011,50',3,'RISARALDA','PRESIDENTE','025,06',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',10659,'012,90',3,'RISARALDA','PRESIDENTE','025,06',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',6720,'008,13',3,'RISARALDA','PRESIDENTE','025,06',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',11326,'013,71',3,'RISARALDA','PRESIDENTE','025,06',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',8813,'010,66',3,'RISARALDA','PRESIDENTE','025,06',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',9094,'011,01',3,'RISARALDA','PRESIDENTE','025,06',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',8054,'009,75',3,'RISARALDA','PRESIDENTE','025,06',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',9127,'011,05',3,'RISARALDA','PRESIDENTE','025,06',NULL);
+/*!40000 ALTER TABLE `departamento_risaralda` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_san_andres`
+--
+
+DROP TABLE IF EXISTS `departamento_san_andres`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_san_andres` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_san_andres`
+--
+
+LOCK TABLES `departamento_san_andres` WRITE;
+/*!40000 ALTER TABLE `departamento_san_andres` DISABLE KEYS */;
+INSERT INTO `departamento_san_andres` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1665,'025,34',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',225,'003,42',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',779,'011,85',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',755,'011,49',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',628,'009,56',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',460,'007,00',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',903,'013,74',3,'SAN ANDRES','PRESIDENTE','024,24',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',235,'003,57',3,'SAN ANDRES','PRESIDENTE','024,24',NULL);
+/*!40000 ALTER TABLE `departamento_san_andres` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_santander`
+--
+
+DROP TABLE IF EXISTS `departamento_santander`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_santander` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_santander`
+--
+
+LOCK TABLES `departamento_santander` WRITE;
+/*!40000 ALTER TABLE `departamento_santander` DISABLE KEYS */;
+INSERT INTO `departamento_santander` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',86505,'007,82',3,'SANTANDER','PRESIDENTE','092,78',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',87165,'007,88',3,'SANTANDER','PRESIDENTE','092,78',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',86827,'007,85',3,'SANTANDER','PRESIDENTE','092,78',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',85408,'007,72',3,'SANTANDER','PRESIDENTE','092,78',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',87188,'007,89',3,'SANTANDER','PRESIDENTE','092,78',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',412536,'037,33',3,'SANTANDER','PRESIDENTE','092,78',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',86498,'007,82',3,'SANTANDER','PRESIDENTE','092,78',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',86162,'007,79',3,'SANTANDER','PRESIDENTE','092,78',NULL);
+/*!40000 ALTER TABLE `departamento_santander` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_sucre`
+--
+
+DROP TABLE IF EXISTS `departamento_sucre`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_sucre` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_sucre`
+--
+
+LOCK TABLES `departamento_sucre` WRITE;
+/*!40000 ALTER TABLE `departamento_sucre` DISABLE KEYS */;
+INSERT INTO `departamento_sucre` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',37724,'007,93',3,'SUCRE','PRESIDENTE','095,29',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',37443,'007,87',3,'SUCRE','PRESIDENTE','095,29',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',36647,'007,70',3,'SUCRE','PRESIDENTE','095,29',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',37918,'007,97',3,'SUCRE','PRESIDENTE','095,29',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',37716,'007,93',3,'SUCRE','PRESIDENTE','095,29',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',174127,'036,61',3,'SUCRE','PRESIDENTE','095,29',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',37752,'007,93',3,'SUCRE','PRESIDENTE','095,29',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',38523,'008,10',3,'SUCRE','PRESIDENTE','095,29',NULL);
+/*!40000 ALTER TABLE `departamento_sucre` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_tolima`
+--
+
+DROP TABLE IF EXISTS `departamento_tolima`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_tolima` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_tolima`
+--
+
+LOCK TABLES `departamento_tolima` WRITE;
+/*!40000 ALTER TABLE `departamento_tolima` DISABLE KEYS */;
+INSERT INTO `departamento_tolima` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',16725,'013,28',3,'TOLIMA','PRESIDENTE','024,92',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',14222,'011,29',3,'TOLIMA','PRESIDENTE','024,92',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',12056,'009,57',3,'TOLIMA','PRESIDENTE','024,92',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',12103,'009,61',3,'TOLIMA','PRESIDENTE','024,92',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',15245,'012,11',3,'TOLIMA','PRESIDENTE','024,92',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',15718,'012,48',3,'TOLIMA','PRESIDENTE','024,92',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',11641,'009,24',3,'TOLIMA','PRESIDENTE','024,92',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',13339,'010,59',3,'TOLIMA','PRESIDENTE','024,92',NULL);
+/*!40000 ALTER TABLE `departamento_tolima` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_valle`
+--
+
+DROP TABLE IF EXISTS `departamento_valle`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_valle` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_valle`
+--
+
+LOCK TABLES `departamento_valle` WRITE;
+/*!40000 ALTER TABLE `departamento_valle` DISABLE KEYS */;
+INSERT INTO `departamento_valle` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',44189,'011,48',3,'VALLE','PRESIDENTE','025,03',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',40759,'010,59',3,'VALLE','PRESIDENTE','025,03',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',44686,'011,61',3,'VALLE','PRESIDENTE','025,03',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',40670,'010,57',3,'VALLE','PRESIDENTE','025,03',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',38924,'010,11',3,'VALLE','PRESIDENTE','025,03',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',43670,'011,34',3,'VALLE','PRESIDENTE','025,03',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',42936,'011,15',3,'VALLE','PRESIDENTE','025,03',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',44379,'011,53',3,'VALLE','PRESIDENTE','025,03',NULL);
+/*!40000 ALTER TABLE `departamento_valle` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_vaupes`
+--
+
+DROP TABLE IF EXISTS `departamento_vaupes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_vaupes` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_vaupes`
+--
+
+LOCK TABLES `departamento_vaupes` WRITE;
+/*!40000 ALTER TABLE `departamento_vaupes` DISABLE KEYS */;
+INSERT INTO `departamento_vaupes` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',649,'022,62',3,'VAUPES','PRESIDENTE','025,35',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',265,'009,23',3,'VAUPES','PRESIDENTE','025,35',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',476,'016,59',3,'VAUPES','PRESIDENTE','025,35',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',263,'009,17',3,'VAUPES','PRESIDENTE','025,35',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',499,'017,39',3,'VAUPES','PRESIDENTE','025,35',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',0,'000,00',3,'VAUPES','PRESIDENTE','025,35',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',118,'004,11',3,'VAUPES','PRESIDENTE','025,35',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',598,'020,85',3,'VAUPES','PRESIDENTE','025,35',NULL);
+/*!40000 ALTER TABLE `departamento_vaupes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departamento_vichada`
+--
+
+DROP TABLE IF EXISTS `departamento_vichada`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `departamento_vichada` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departamento_vichada`
+--
+
+LOCK TABLES `departamento_vichada` WRITE;
+/*!40000 ALTER TABLE `departamento_vichada` DISABLE KEYS */;
+INSERT INTO `departamento_vichada` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1695,'024,13',3,'VICHADA','PRESIDENTE','025,00',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',924,'013,15',3,'VICHADA','PRESIDENTE','025,00',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',699,'009,95',3,'VICHADA','PRESIDENTE','025,00',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1457,'020,74',3,'VICHADA','PRESIDENTE','025,00',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',293,'004,17',3,'VICHADA','PRESIDENTE','025,00',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',1023,'014,56',3,'VICHADA','PRESIDENTE','025,00',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',390,'005,55',3,'VICHADA','PRESIDENTE','025,00',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',179,'002,54',3,'VICHADA','PRESIDENTE','025,00',NULL);
+/*!40000 ALTER TABLE `departamento_vichada` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `nacional`
+--
+
+DROP TABLE IF EXISTS `nacional`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `nacional` (
+  `Id` int(11) NOT NULL,
+  `Nombre` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Apellido` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Cedula` int(11) NOT NULL,
+  `Id_Partido` int(11) NOT NULL,
+  `Partido` varchar(50) COLLATE utf8_bin NOT NULL,
+  `Votos` int(11) NOT NULL,
+  `Porcentaje` varchar(7) COLLATE utf8_bin NOT NULL,
+  `Boletin` int(11) NOT NULL,
+  `Region` varchar(30) COLLATE utf8_bin NOT NULL,
+  `Corporacion` varchar(20) COLLATE utf8_bin NOT NULL DEFAULT 'PRESIDENTE',
+  `Escrutado` varchar(7) COLLATE utf8_bin DEFAULT NULL,
+  `Color` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `nacional`
+--
+
+LOCK TABLES `nacional` WRITE;
+/*!40000 ALTER TABLE `nacional` DISABLE KEYS */;
+INSERT INTO `nacional` VALUES (1,'RODOLFO','HERNÁNDEZ',5561779,1076,'LIGA DE GOBERNANTES ANTICORRUPCIÓN',1324651,'008,16',3,'NACIONAL','PRESIDENTE','040,19',NULL),(2,'JOHN MILTON','RODRÍGUEZ',16770885,14,'COLOMBIA JUSTA LIBRES',1306172,'008,04',3,'NACIONAL','PRESIDENTE','040,19',NULL),(3,'FEDERICO','GUTIÉRREZ',71751933,1234,'COALICIÓN EQUIPO POR COLOMBIA',1318734,'008,12',3,'NACIONAL','PRESIDENTE','040,19',NULL),(4,'SERGIO','FAJARDO',70546658,1233,'COALICIÓN CENTRO ESPERANZA',1291128,'007,95',3,'NACIONAL','PRESIDENTE','040,19',NULL),(5,'ENRIQUE','GÓMEZ MARTÍNEZ',79468770,302,'PARTIDO MOVIMIENTO DE SALVACIÓN NACIONAL',1315017,'008,10',3,'NACIONAL','PRESIDENTE','040,19',NULL),(6,'GUSTAVO','PETRO',208079,1235,'COALICIÓN PACTO HISTÓRICO',5758234,'035,48',3,'NACIONAL','PRESIDENTE','040,19',NULL),(7,'LUIS','PÉREZ',70031781,527,'COLOMBIA PIENSA EN GRANDE',1294155,'007,97',3,'NACIONAL','PRESIDENTE','040,19',NULL),(8,'INGRID','BETANCOURT',51887528,304,'PARTIDO VERDE OXÍGENO',1326341,'008,17',3,'NACIONAL','PRESIDENTE','040,19',NULL);
+/*!40000 ALTER TABLE `nacional` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-05-23 17:04:00
