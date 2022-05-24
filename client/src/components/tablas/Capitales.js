@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { useLocation } from "react-router-dom";
 import { getCapitales } from '../../actions/Capitales.js';
+import { CreateXML } from '../../actions/Xml.js';
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
-const Capitales = ({ getCapitales, candidatos: {candidatos , loading}} ) => {
+const Capitales = ({ getCapitales, CreateXML, candidatos: {candidatos , loading}} ) => {
 
     let location = useLocation();    
     let templocation = location.pathname.split('/');
@@ -18,6 +21,10 @@ const Capitales = ({ getCapitales, candidatos: {candidatos , loading}} ) => {
         }
         fetchData();
     }, [templocation[2]]); // Or [] if effect doesn't need props or state
+
+    async function ExportXml(){        
+        await CreateXML(candidatos.data);
+    }
 
     return (
 
@@ -34,6 +41,7 @@ const Capitales = ({ getCapitales, candidatos: {candidatos , loading}} ) => {
                         <th className="priority-4"><h1>Porcentaje</h1></th>  
                         <th className="priority-5"><h1>Region</h1></th>  
                         <th className="priority-5"><h1>Boletin</h1></th>  
+                        <th className="priority-5"><h1>Escrutado</h1></th>  
                     </tr>  
 
                     {candidatos.data.map ( candidatos => (
@@ -45,12 +53,23 @@ const Capitales = ({ getCapitales, candidatos: {candidatos , loading}} ) => {
                             <td className="priority-4">{candidatos.Porcentaje}</td>  
                             <td className="priority-5">{candidatos.Region}</td>  
                             <td className="priority-5">{candidatos.Boletin}</td>  
+                            <td className="priority-5">{candidatos.Escrutado}</td>  
                         </tr> 
                     ))}
                 </tbody>
 
                 
-            </table>  
+            </table>     
+            <div className="Button">
+                <AwesomeButton 
+                    type="primary"
+                    onPress={() => {
+                        ExportXml()
+                    }}                
+                    >
+                        Xml
+                </AwesomeButton>    
+            </div>     
             </section>
             ): <h4>NO FOUND</h4>      
         }                
@@ -60,6 +79,7 @@ const Capitales = ({ getCapitales, candidatos: {candidatos , loading}} ) => {
 
 Capitales.propTypes = {
     getCapitales: PropTypes.func.isRequired,
+    CreateXML: PropTypes.func.isRequired,
     candidatos:PropTypes.object.isRequired
 }
 
@@ -67,4 +87,4 @@ const mapStateToProps = state => ({
     candidatos: state.candidatos
 })
 
-export default connect(mapStateToProps, { getCapitales })(Capitales)
+export default connect(mapStateToProps, { getCapitales, CreateXML })(Capitales)
