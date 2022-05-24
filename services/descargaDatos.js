@@ -6,8 +6,6 @@ const cheerio = require('cheerio');
 const zlib = require('zlib')
 const request = require('request')
 const parseString = require('xml2js').parseString;
-//let datos
-//let UpdateDatos = []
 
 //------------------PRESIDENCIALES NACIONAL--------------------
 
@@ -18,6 +16,7 @@ async function UpdatePRNacional(xml, page = 1){
     parseString(xml, function (err, result) { datos= result });
     
     let Boletin = datos.Consolidado.Boletin[0].Numero[0].$.V
+    let Escrutado = datos.Consolidado.Boletin[0].Porc_Mesas_Informadas[0].$.V
     let Region
     datos.Consolidado.Boletin[0].Tipo_Boletin[0].$.V == 'NACIONAL' ? Region = 'NACIONAL' : Region = datos.Consolidado.Boletin[0].Desc_Departamento[0].$.V
   
@@ -26,16 +25,14 @@ async function UpdatePRNacional(xml, page = 1){
     UpdateDatos = partidos.map((el) => [
       el.Candidato[0].$.V,
       el.Votos[0].$.V,
-      el.Porc[0].$.V,
-      Boletin      
-    ])      
-
-    
-  
+      parseFloat((el.Porc[0].$.V).replace(/,/, '.')),
+      Boletin,
+      parseFloat((Escrutado).replace(/,/, '.'))      
+    ])        
     
     let offset = helper.getOffset(page, config.listPerPage);
       
-    let temp = `INSERT INTO nacional (Id, Votos, Porcentaje, Boletin) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin)` 
+    let temp = `INSERT INTO nacional (Id, Votos, Porcentaje, Boletin, Escrutado) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin), Escrutado=values(Escrutado)` 
   
     let rows = await db.query(
       temp, 
@@ -49,6 +46,7 @@ async function UpdatePRNacional(xml, page = 1){
       data,
       meta
     }
+    
   
   }
 
@@ -120,7 +118,6 @@ async function getPRNacional(page = 1, read = 1){
 
 
 
-
 //-------------------PRESIDENCIALES DEPARTAMENTOS
 
 async function UpdatePRDepartamentos(xml, page = 1){
@@ -133,6 +130,7 @@ async function UpdatePRDepartamentos(xml, page = 1){
     
     ArrayDepartamentos.map(async (ele, idx) => {
         let Boletin = ele.Numero[0].$.V
+        let Escrutado = ele.Porc_Mesas_Informadas[0].$.V
         let Region
         ele.Tipo_Boletin[0].$.V == 'NACIONAL' ? Region = 'NACIONAL' : Region = ele.Desc_Departamento[0].$.V
         let partidos = ele.Detalle_Circunscripcion[0].lin[0].Detalle_Candidato[0].lin
@@ -140,8 +138,9 @@ async function UpdatePRDepartamentos(xml, page = 1){
         UpdateDatos = partidos.map((el) => [
             el.Candidato[0].$.V,
             el.Votos[0].$.V,
-            el.Porc[0].$.V,
-            Boletin      
+            parseFloat((el.Porc[0].$.V).replace(/,/, '.')),
+            Boletin,
+            parseFloat((Escrutado).replace(/,/, '.'))
         ]) 
 
         let offset = helper.getOffset(page, config.listPerPage);
@@ -150,7 +149,7 @@ async function UpdatePRDepartamentos(xml, page = 1){
         tempregion = tempregion.replace(/\./g,'_')
         
       
-        let temp = `INSERT INTO departamento_${tempregion} (Id, Votos, Porcentaje, Boletin) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin)` 
+        let temp = `INSERT INTO departamento_${tempregion} (Id, Votos, Porcentaje, Boletin, Escrutado) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin), Escrutado=values(Escrutado)` 
     
         let rows = await db.query(
         temp, 
@@ -247,6 +246,7 @@ async function UpdatePRCapitales(xml, page = 1){
     
     ArrayCapitales.map(async (ele, idx) => {
         let Boletin = ele.Numero[0].$.V
+        let Escrutado = ele.Porc_Mesas_Informadas[0].$.V
         let Region
         ele.Tipo_Boletin[0].$.V == 'NACIONAL' ? Region = 'NACIONAL' : Region = ele.Desc_Municipio[0].$.V
         let partidos = ele.Detalle_Circunscripcion[0].lin[0].Detalle_Candidato[0].lin
@@ -254,8 +254,9 @@ async function UpdatePRCapitales(xml, page = 1){
         UpdateDatos = partidos.map((el) => [
             el.Candidato[0].$.V,
             el.Votos[0].$.V,
-            el.Porc[0].$.V,
-            Boletin      
+            parseFloat((el.Porc[0].$.V).replace(/,/, '.')),
+            Boletin,
+            parseFloat((Escrutado).replace(/,/, '.'))
         ]) 
 
         let offset = helper.getOffset(page, config.listPerPage);
@@ -264,7 +265,7 @@ async function UpdatePRCapitales(xml, page = 1){
         tempregion = tempregion.replace(/\./g,'_')
         
       
-        let temp = `INSERT INTO capital_${tempregion} (Id, Votos, Porcentaje, Boletin) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin)` 
+        let temp = `INSERT INTO capital_${tempregion} (Id, Votos, Porcentaje, Boletin, Escrutado) VALUES ? on duplicate key update Votos=values(Votos), Porcentaje=values(Porcentaje), Boletin=values(Boletin), Escrutado=values(Escrutado)` 
     
         let rows = await db.query(
         temp, 
