@@ -73,4 +73,15 @@ router.post('/TodoCero', async function(req, res, next) {
   }
 });
 
+
+/* AÑADIR COLUMNA */
+router.post('/AnadirColumna', async function(req, res, next) {
+  try {
+    res.json(await peticion.AnadirColumna(req.query.page));
+  } catch (err) {
+    console.error(`Error while getting programming languages `, err.message);
+    next(err);
+  }
+});
+
 module.exports = router;
