@@ -1,5 +1,6 @@
 var fs = require('fs');
 var convert = require('xml-js');
+var js2xmlparser = require("js2xmlparser");
 
   //-----------------TODAS LAS TABLAS A 0--------------------------------------------
   async function CreateXML(datos){        
