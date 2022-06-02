@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "d7bd3b9e-a87a-4fab-b6fd-cc7e9988ad79",
+		"name": "XML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19411276"
+	},
+	"item": [
+		{
+			"name": "Create XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/xml/CreateXML",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"xml",
+						"CreateXML"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "7a9823f8-328e-4a1f-a64a-f0cf8e0577ce",
+		"name": "Archivos Clave",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19411276"
+	},
+	"item": [
+		{
+			"name": "GET CANDIDATOS TXT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/Candidatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"Candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT CANDIDATOS NACIONAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/InsertCandidatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"InsertCandidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VACIAR TABLAS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/DeleteCandidatos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"DeleteCandidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT CANDIDATOS CAPITALES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/InsertCandidatosCapitales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"InsertCandidatosCapitales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT CANDIDATOS DEPARTAMENTOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/InsertCandidatosDepartamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"InsertCandidatosDepartamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERTAR CANDIDATOS TODAS LAS TABLAS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/InsertAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"InsertAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TODO A CERO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/TodoCero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"TodoCero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AÑADIR COLUMNA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clave/AnadirColumna",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clave",
+						"AnadirColumna"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

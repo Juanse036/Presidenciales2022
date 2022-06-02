@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "45750172-72a7-4543-bb13-5ebcddb8495b",
+		"name": "Consulta Base SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19411276"
+	},
+	"item": [
+		{
+			"name": "Get Departamento Presidencial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/consultas/PRDepartamento/amazonas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"consultas",
+						"PRDepartamento",
+						"amazonas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Capital Presidencial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/consultas/PRCapital/quibdo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"consultas",
+						"PRCapital",
+						"quibdo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Nacional Presidencial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/consultas/PRNacional",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"consultas",
+						"PRNacional"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

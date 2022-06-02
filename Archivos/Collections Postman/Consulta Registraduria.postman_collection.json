@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "3894675e-f762-4547-8fa8-75d2deb8cef9",
+		"name": "Consulta Registraduria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19411276"
+	},
+	"item": [
+		{
+			"name": "GET Presidencial Nacional",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/PRNacional",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"PRNacional"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Update Presidencial Nacional",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/UpdatePRNacional",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"UpdatePRNacional"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Presidencial Departamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/PRDepartamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"PRDepartamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Presidenciales Departamentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/UpdatePRDepartamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"UpdatePRDepartamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Presidencial Capitales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/PRCapitales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"PRCapitales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Presidenciales Capitales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/UpdatePRCapitales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"UpdatePRCapitales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update All Presidenciales",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/descargaDatos/UpdatePR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"descargaDatos",
+						"UpdatePR"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
