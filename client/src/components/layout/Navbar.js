@@ -76,7 +76,8 @@ const Navbar = () => {
         "LA GUAJIRA",
         "CASANARE",
         "BOYACA",
-        "CESAR"
+        "CESAR",
+        "CONSULADOS"
     ]
       
 

@@ -74,7 +74,8 @@ const departamentos = [
 "LA GUAJIRA",
 "CASANARE",
 "BOYACA",
-"CESAR"
+"CESAR",
+"CONSULADOS"
 ]
 
 //----------------------CANDIDATOS.TXT-----------------------------------

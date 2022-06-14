@@ -1,8 +1,2 @@
 0010000000010760011RODOLFO                                           HERNÁNDEZ                                         5561779        M01
-0010000000000140021JOHN MILTON                                       RODRÍGUEZ                                         16770885       M02
-0010000000012340031FEDERICO                                          GUTIÉRREZ                                         71751933       M03
-0010000000012330041SERGIO                                            FAJARDO                                           70546658       M04
-0010000000003020051ENRIQUE                                           GÓMEZ MARTÍNEZ                                    79468770       M05
-0010000000012350061GUSTAVO                                           PETRO                                             208079         M06
-0010000000005270071LUIS                                              PÉREZ                                             70031781       M07
-0010000000003040081INGRID                                            BETANCOURT                                        51887528       F08
+0010000000012350021GUSTAVO                                           PETRO                                             208079         M02

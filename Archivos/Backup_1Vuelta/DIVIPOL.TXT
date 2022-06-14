@@ -12305,8 +12305,8 @@
 882900502CONSULADOS  CUBA                          LA HABANA - CONSULADO                   30000035800000304000001                                
 883050202CONSULADOS  CHILE                         ANTOFAGASTA CONSULADO                   30000220200002116000007                                
 883050204CONSULADOS  CHILE                         IQUIQUE                                 30000019600000130000001                                
+883050501CONSULADOS  CHILE                         SANTIAGO EMBAJADA                       30000325300002966000009                                
 883050502CONSULADOS  CHILE                         SANTIAGO CONSULADO                      30000750800006138000020                                
-883051501CONSULADOS  CHILE                         SANTIAGO EMBAJADA                       30000325300002966000009                                
 883150501CONSULADOS  CHINA REPUBLICA POPULAR       BEIJING - EMBAJADA                      30000008000000123000001                                
 883151002CONSULADOS  CHINA REPUBLICA POPULAR       GUANGZHOU CONSULADO                     30000007300000110000001                                
 883155002CONSULADOS  CHINA REPUBLICA POPULAR       HONG KONG - CONSULADO                   30000009500000075000001                                
@@ -12326,11 +12326,11 @@
 883550302CONSULADOS  ESPAÑA                        BARCELONA - CONSULADO                   30001697200014236000045                                
 883550304CONSULADOS  ESPAÑA                        ZARAGOZA                                30000049300000371000002                                
 883550402CONSULADOS  ESPAÑA                        BILBAO - CONSULADO                      30000691700005513000018                                
+883550501CONSULADOS  ESPAÑA                        MADRID - EMBAJADA                       30001898300016998000052                                
 883550502CONSULADOS  ESPAÑA                        MADRID - CONSULADO                      30001835600014281000048                                
 883550504CONSULADOS  ESPAÑA                        LUGO, PROVINCIA DE GALICIA              30000102600000519000003                                
 883550505CONSULADOS  ESPAÑA                        ALBACETE, CASTILLA DE LA MANCHA         30000035800000198000001                                
 883550506CONSULADOS  ESPAÑA                        VALLADOLID,PROVINCIA DE CASTILLO Y LEÓN 30000082200000510000002                                
-883551501CONSULADOS  ESPAÑA                        MADRID - EMBAJADA                       30001898300016998000052                                
 883555002CONSULADOS  ESPAÑA                        SEVILLA - CONSULADO                     30000562300003841000014                                
 883555004CONSULADOS  ESPAÑA                        MALAGA                                  30000125000000678000003                                
 883555005CONSULADOS  ESPAÑA                        ALMERÍA                                 30000023600000135000001                                
@@ -12397,11 +12397,11 @@
 883606011CONSULADOS  ESTADOS UNIDOS                HAWAII                                  30000002400000014000001                                
 883700502CONSULADOS  REPUBLICA DE FILIPINAS        MANILA CONSULADO                        30000007300000068000001                                
 883750501CONSULADOS  FINLANDIA                     HELSINKI EMBAJADA                       30000018300000201000001                                
+883800501CONSULADOS  FRANCIA                       PARIS - EMBAJADA                        30000318500002313000008                                
 883800502CONSULADOS  FRANCIA                       PARIS - CONSULADO                       30000513200003785000013                                
 883800504CONSULADOS  FRANCIA                       PARIS - ESTRASBURGO                     30000021700000165000001                                
 883800505CONSULADOS  FRANCIA                       PARIS - LYON                            30000062000000422000002                                
 883800506CONSULADOS  FRANCIA                       PARIS - MONTPELLIER                     30000056900000326000002                                
-883801501CONSULADOS  FRANCIA                       PARIS - EMBAJADA                        30000318500002313000008                                
 884100502CONSULADOS  GUATEMALA                     GUATEMALA - CONSULADO                   30000092900000815000003                                
 884350502CONSULADOS  PAISES BAJOS                  AMSTERDAM CONSULADO                     30000175600001191000005                                
 884351001CONSULADOS  PAISES BAJOS                  LA HAYA EMBAJADA                        30000079500000443000002                                

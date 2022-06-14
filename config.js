@@ -1,7 +1,31 @@
+
+
+//CONFIGURACION PRESIDENCIALES SEGUNDA VUELTA
+
 const env = process.env;
 
 const config = {
-  db: { /* don't expose password or any sensitive info, done only for demo */
+  db: { // don't expose password or any sensitive info, done only for demo
+    host: env.DB_HOST || 'localhost',
+    user: env.DB_USER || 'gotit',
+    password: env.DB_PASSWORD || 'gotit2022',
+    database: env.DB_NAME || 'presidenciales2022_2vuelta',
+    multipleStatements: true
+  },
+  listPerPage: env.LIST_PER_PAGE || 10,
+};
+
+
+module.exports = config;
+
+
+/*
+//CONFIGURACION PRESIDENCIALES PRIMERA VUELTA
+
+const env = process.env;
+
+const config = {
+  db: { // don't expose password or any sensitive info, done only for demo
     host: env.DB_HOST || 'localhost',
     user: env.DB_USER || 'gotit',
     password: env.DB_PASSWORD || 'gotit2022',
@@ -13,6 +37,6 @@ const config = {
 
 
 module.exports = config;
-
+*/
 
 
