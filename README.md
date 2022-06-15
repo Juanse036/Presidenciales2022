@@ -2,7 +2,7 @@
 
 Esta Aplicación
 
- - lee la URL de la registraduria nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
+ - Lee la URL de la registraduria nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
  - Lee la base de datos local y muestra los datos en una tabla, puede mostrar datos de todos los departamentos/capitales o resultados nacionales.
  - Crea un XML con el fin de ser interpretado dentro de VIZRT
 
