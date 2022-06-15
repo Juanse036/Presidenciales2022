@@ -10,8 +10,8 @@ Esta Aplicación
 
 ##### Base de Datos SQL
 
- -Crear base datos local con el archivo Prsidenciales2022Final.sql que se encuentra en Archivos/BackupSQL
- -Configurar Usuario y Contraseña de esta base de datos en el archivo Config.js
+ - Crear base datos local con el archivo Prsidenciales2022Final.sql que se encuentra en Archivos/BackupSQL
+ - Configurar Usuario y Contraseña de esta base de datos en el archivo Config.js
 
 ##### Correr la Aplicación
 
@@ -44,6 +44,6 @@ En la carpeta archivos se encuentran archivos iniciales y archivos backup.
 
 ### Tecnologias Usadas
 
- -NodeJS: Versión 14.17.2
- -ReactJS: Versión 18.1.0
+ - NodeJS: Versión 14.17.2
+ - ReactJS: Versión 18.1.0
  
