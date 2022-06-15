@@ -2,7 +2,7 @@
 
 Esta Aplicación
 
- - Lee la URL de la registraduria nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
+ - Lee la URL de la registraduría nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
  - Lee la base de datos local y muestra los datos en una tabla, puede mostrar datos de todos los departamentos/capitales o resultados nacionales.
  - Crea un XML con el fin de ser interpretado dentro de VIZRT
 
@@ -42,7 +42,7 @@ En la carpeta archivos se encuentran archivos iniciales y archivos backup.
  - BackupSQL_2Vuelta: se encuentran los archivos SQL de la segunda vuelta Presidencial 2022, donde los primeros archivos son con datos de prueba y el archivo Prsidenciales2022_2vuelta_Final.sql contiene los resultados finales
 
 
-### Tecnologias Usadas
+### Tecnologías Usadas
 
  - NodeJS: Versión 14.17.2
  - ReactJS: Versión 18.1.0
