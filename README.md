@@ -1,20 +1,22 @@
 # API PRIDENCIALES 2022
 
 Esta Aplicación
- -lee la URL de la registraduria nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
- -Lee la base de datos local y muestra los datos en una tabla, puede mostrar datos de todos los departamentos/capitales o resultados nacionales.
- -Crea un XML con el fin de ser interpretado dentro de VIZRT
+
+ - lee la URL de la registraduria nacional y descarga los archivos, luego toma los datos importantes y llena una base de datos local.
+ - Lee la base de datos local y muestra los datos en una tabla, puede mostrar datos de todos los departamentos/capitales o resultados nacionales.
+ - Crea un XML con el fin de ser interpretado dentro de VIZRT
 
 ## Configuracion
 
-###### Base de Datos SQL
+##### Base de Datos SQL
+
  -Crear base datos local con el archivo Prsidenciales2022Final.sql que se encuentra en Archivos/BackupSQL
  -Configurar Usuario y Contraseña de esta base de datos en el archivo Config.js
 
-###### Correr la Aplicación
+##### Correr la Aplicación
 
- -Debe tener instalado [NodeJS](https://nodejs.org/es/download/) en su computador.
- -en la consola de comandos en la ruta del proyecto ejecutar los siguientes comandos:
+ - Debe tener instalado [NodeJS](https://nodejs.org/es/download/) en su computador.
+ - en la consola de comandos en la ruta del proyecto ejecutar los siguientes comandos:
  
 ```bash
 # instala las dependencias del back-end
