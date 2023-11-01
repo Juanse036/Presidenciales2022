@@ -28,7 +28,7 @@ npm install
 
 # se devuelve a la carpeta inicial y ejecuta la aplicacion
 cd..
-npm run server
+npm run dev
 
 ```
 
